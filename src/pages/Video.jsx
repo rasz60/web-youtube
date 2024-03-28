@@ -2,9 +2,11 @@ import React from 'react'
 import Main from '../components/section/Main'
 
 const Video = () => {
-  return (
-    <Main>Video</Main>
-  )
+    return (
+        <Main title="" description="">
+            Video
+        </Main>
+    )
 }
 
 export default Video

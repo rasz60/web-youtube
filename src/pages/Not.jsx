@@ -2,9 +2,11 @@ import React from 'react'
 import Main from '../components/section/Main'
 
 const Not = () => {
-  return (
-    <Main>Not</Main>
-  )
+    return (
+        <Main title="" description="">
+            Not
+        </Main>
+    )
 }
 
 export default Not
