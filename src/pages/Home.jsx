@@ -3,7 +3,6 @@ import Main from '../components/section/Main'
 import Today from '../components/contents/Today'
 import Developer from '../components/contents/Developer'
 import VideoSlider from '../components/videos/VideoSlider'
-
 import { webdText } from '../data/webd'
 import { websiteText } from '../data/website'
 import { gsapText } from '../data/gsap'
@@ -11,9 +10,9 @@ import { portfolioText } from '../data/portfolio'
 import { youtubeText } from '../data/youtube'
 
 const Home = () => {
+
     return (
         <Main title="" description="">
-            
             <Today />
             <Developer />
             <VideoSlider videos={webdText} title='웹디자인기능사 준비는 이걸로!' id='webd' />
