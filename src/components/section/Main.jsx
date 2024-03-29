@@ -4,10 +4,12 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Header from './Header'
 import Footer from './Footer'
 import Search from './Search'
+import ScrollTo from '../../utils/scrollTo'
 
 const Main = (props) => {
     return (
         <HelmetProvider>
+            <ScrollTo />
             <Helmet titleTemplate="%s|Hestia 502" defaultTitle="Hestia 502" defer={false}>
                 { props.title && <title>{props.title}</title> }
                 <meta name="description" content={props.description} />

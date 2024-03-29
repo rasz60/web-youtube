@@ -31,7 +31,7 @@ const Search = () => {
 
     const fetchVideos = (query, pageToken = '') => {
         // rapid API
-        fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
+        fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`) //parameter type=video 추가, 오류 체감될 때 넣어야지
             .then((data)=> {
                 setNextPageToken(data.nextPageToken);
                 setVideos((prevVideos) => [...prevVideos, ...data.items]);
